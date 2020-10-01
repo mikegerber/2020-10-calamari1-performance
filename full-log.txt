@@ -1,0 +1,301 @@
+% ./test.sh                                                                                           master ■?
+Preparing test data...
+Downloading models...
+Already using interpreter /usr/bin/python3.6
+calamari-predict v0.3.5
+Found 5103 files in the dataset
+Checkpoint version 1 is up-to-date.
+WARNING:tensorflow:
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+WARNING:tensorflow:From /tmp/tmp.MSlyRGlWH0/lib/python3.6/site-packages/calamari_ocr/ocr/backends/tensorflow_backend/tensorflow_backend.py:15: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+WARNING:tensorflow:From /tmp/tmp.MSlyRGlWH0/lib/python3.6/site-packages/calamari_ocr/ocr/backends/tensorflow_backend/tensorflow_backend.py:16: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2020-10-01 18:47:13.705254: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-10-01 18:47:13.720008: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2799925000 Hz
+2020-10-01 18:47:13.720244: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x56234a919e60 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-10-01 18:47:13.720258: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+WARNING:tensorflow:From /tmp/tmp.MSlyRGlWH0/lib/python3.6/site-packages/calamari_ocr/ocr/backends/tensorflow_backend/tensorflow_model.py:31: The name tf.set_random_seed is deprecated. Please use tf.compat.v1.set_random_seed instead.
+
+WARNING:tensorflow:From /tmp/tmp.MSlyRGlWH0/lib/python3.6/site-packages/calamari_ocr/ocr/backends/tensorflow_backend/tensorflow_model.py:237: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+WARNING:tensorflow:From /tmp/tmp.MSlyRGlWH0/lib/python3.6/site-packages/calamari_ocr/ocr/backends/tensorflow_backend/tensorflow_model.py:257: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From /tmp/tmp.MSlyRGlWH0/lib/python3.6/site-packages/calamari_ocr/ocr/backends/tensorflow_backend/tensorflow_model.py:272: DatasetV1.make_initializable_iterator (from tensorflow.python.data.ops.dataset_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `for ... in dataset:` to iterate over a dataset. If using `tf.estimator`, return the `Dataset` object directly from your input function. As a last resort, you can use `tf.compat.v1.data.make_initializable_iterator(dataset)`.
+WARNING:tensorflow:From /tmp/tmp.MSlyRGlWH0/lib/python3.6/site-packages/calamari_ocr/ocr/backends/tensorflow_backend/tensorflow_model.py:274: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /tmp/tmp.MSlyRGlWH0/lib/python3.6/site-packages/calamari_ocr/ocr/backends/tensorflow_backend/tensorflow_model.py:95: conv2d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv2D` instead.
+WARNING:tensorflow:From /tmp/tmp.MSlyRGlWH0/lib/python3.6/site-packages/tensorflow_core/python/layers/convolutional.py:424: Layer.apply (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.__call__` method instead.
+WARNING:tensorflow:From /tmp/tmp.MSlyRGlWH0/lib/python3.6/site-packages/calamari_ocr/ocr/backends/tensorflow_backend/tensorflow_model.py:104: max_pooling2d (from tensorflow.python.layers.pooling) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.MaxPooling2D instead.
+WARNING:tensorflow:From /tmp/tmp.MSlyRGlWH0/lib/python3.6/site-packages/calamari_ocr/ocr/backends/tensorflow_backend/tensorflow_model.py:107: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.cast` instead.
+Using CUDNN compatible LSTM backend on CPU
+WARNING:tensorflow:From /tmp/tmp.MSlyRGlWH0/lib/python3.6/site-packages/tensorflow_core/contrib/rnn/python/ops/rnn.py:239: bidirectional_dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.Bidirectional(keras.layers.RNN(cell))`, which is equivalent to this API
+WARNING:tensorflow:From /tmp/tmp.MSlyRGlWH0/lib/python3.6/site-packages/tensorflow_core/python/ops/rnn.py:464: dynamic_rnn (from tensorflow.python.ops.rnn) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `keras.layers.RNN(cell)`, which is equivalent to this API
+WARNING:tensorflow:From /tmp/tmp.MSlyRGlWH0/lib/python3.6/site-packages/tensorflow_core/contrib/rnn/python/ops/lstm_ops.py:360: Layer.add_variable (from tensorflow.python.keras.engine.base_layer) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `layer.add_weight` method instead.
+WARNING:tensorflow:From /tmp/tmp.MSlyRGlWH0/lib/python3.6/site-packages/calamari_ocr/ocr/backends/tensorflow_backend/tensorflow_model.py:184: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From /tmp/tmp.MSlyRGlWH0/lib/python3.6/site-packages/calamari_ocr/ocr/backends/tensorflow_backend/tensorflow_model.py:187: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+WARNING:tensorflow:From /tmp/tmp.MSlyRGlWH0/lib/python3.6/site-packages/calamari_ocr/ocr/backends/tensorflow_backend/tensorflow_model.py:187: The name tf.random_uniform is deprecated. Please use tf.random.uniform instead.
+
+WARNING:tensorflow:From /tmp/tmp.MSlyRGlWH0/lib/python3.6/site-packages/calamari_ocr/ocr/backends/tensorflow_backend/tensorflow_model.py:384: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+Checkpoint version 1 is up-to-date.
+Using CUDNN compatible LSTM backend on CPU
+Checkpoint version 1 is up-to-date.
+Using CUDNN compatible LSTM backend on CPU
+Checkpoint version 1 is up-to-date.
+Using CUDNN compatible LSTM backend on CPU
+Checkpoint version 1 is up-to-date.
+Using CUDNN compatible LSTM backend on CPU
+Prediction: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 5103/5103 [19:30<00:00,  4.36it/s]
+Prediction of 5 models took 1170.924043416977s
+Average sentence confidence: 99.64%
+All files written
+Already using interpreter /usr/bin/python3.6
+calamari-predict v1.0.5
+Found 5103 files in the dataset
+Checkpoint version 2 is up-to-date.
+2020-10-01 19:07:37.336611: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'libcudart.so.10.1'; dlerror: libcudart.so.10.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /usr/local/cuda/lib64:/usr/local/cuda/lib64
+2020-10-01 19:07:37.336635: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2020-10-01 19:07:38.145735: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2020-10-01 19:07:38.168450: E tensorflow/stream_executor/cuda/cuda_driver.cc:314] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2020-10-01 19:07:38.168496: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: b-pc30533
+2020-10-01 19:07:38.168508: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: b-pc30533
+2020-10-01 19:07:38.168595: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 450.66.0
+2020-10-01 19:07:38.168626: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 450.66.0
+2020-10-01 19:07:38.168634: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 450.66.0
+2020-10-01 19:07:38.168903: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-10-01 19:07:38.175556: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2799925000 Hz
+2020-10-01 19:07:38.175855: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55bb18d7c240 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-10-01 19:07:38.175876: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+Model: "functional_1"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input_data (InputLayer)         [(None, None, 48, 1) 0                                            
+__________________________________________________________________________________________________
+conv2d_0 (Conv2D)               (None, None, 48, 40) 400         input_data[0][0]                 
+__________________________________________________________________________________________________
+pool2d_1 (MaxPooling2D)         (None, None, 24, 40) 0           conv2d_0[0][0]                   
+__________________________________________________________________________________________________
+conv2d_1 (Conv2D)               (None, None, 24, 60) 21660       pool2d_1[0][0]                   
+__________________________________________________________________________________________________
+pool2d_3 (MaxPooling2D)         (None, None, 12, 60) 0           conv2d_1[0][0]                   
+__________________________________________________________________________________________________
+reshape (Reshape)               (None, None, 720)    0           pool2d_3[0][0]                   
+__________________________________________________________________________________________________
+bidirectional (Bidirectional)   (None, None, 400)    1473600     reshape[0][0]                    
+__________________________________________________________________________________________________
+dropout (Dropout)               (None, None, 400)    0           bidirectional[0][0]              
+__________________________________________________________________________________________________
+input_sequence_length (InputLay [(None, 1)]          0                                            
+__________________________________________________________________________________________________
+logits (Dense)                  (None, None, 255)    102255      dropout[0][0]                    
+__________________________________________________________________________________________________
+tf_op_layer_FloorDiv (TensorFlo [(None, 1)]          0           input_sequence_length[0][0]      
+__________________________________________________________________________________________________
+softmax (Softmax)               (None, None, 255)    0           logits[0][0]                     
+__________________________________________________________________________________________________
+input_data_params (InputLayer)  [(None, 1)]          0                                            
+__________________________________________________________________________________________________
+tf_op_layer_FloorDiv_1 (TensorF [(None, 1)]          0           tf_op_layer_FloorDiv[0][0]       
+==================================================================================================
+Total params: 1,597,915
+Trainable params: 1,597,915
+Non-trainable params: 0
+__________________________________________________________________________________________________
+None
+Checkpoint version 2 is up-to-date.
+Model: "functional_3"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input_data (InputLayer)         [(None, None, 48, 1) 0                                            
+__________________________________________________________________________________________________
+conv2d_0 (Conv2D)               (None, None, 48, 40) 400         input_data[0][0]                 
+__________________________________________________________________________________________________
+pool2d_1 (MaxPooling2D)         (None, None, 24, 40) 0           conv2d_0[0][0]                   
+__________________________________________________________________________________________________
+conv2d_1 (Conv2D)               (None, None, 24, 60) 21660       pool2d_1[0][0]                   
+__________________________________________________________________________________________________
+pool2d_3 (MaxPooling2D)         (None, None, 12, 60) 0           conv2d_1[0][0]                   
+__________________________________________________________________________________________________
+reshape_1 (Reshape)             (None, None, 720)    0           pool2d_3[0][0]                   
+__________________________________________________________________________________________________
+bidirectional_1 (Bidirectional) (None, None, 400)    1473600     reshape_1[0][0]                  
+__________________________________________________________________________________________________
+dropout_1 (Dropout)             (None, None, 400)    0           bidirectional_1[0][0]            
+__________________________________________________________________________________________________
+input_sequence_length (InputLay [(None, 1)]          0                                            
+__________________________________________________________________________________________________
+logits (Dense)                  (None, None, 255)    102255      dropout_1[0][0]                  
+__________________________________________________________________________________________________
+tf_op_layer_FloorDiv_2 (TensorF [(None, 1)]          0           input_sequence_length[0][0]      
+__________________________________________________________________________________________________
+softmax (Softmax)               (None, None, 255)    0           logits[0][0]                     
+__________________________________________________________________________________________________
+input_data_params (InputLayer)  [(None, 1)]          0                                            
+__________________________________________________________________________________________________
+tf_op_layer_FloorDiv_3 (TensorF [(None, 1)]          0           tf_op_layer_FloorDiv_2[0][0]     
+==================================================================================================
+Total params: 1,597,915
+Trainable params: 1,597,915
+Non-trainable params: 0
+__________________________________________________________________________________________________
+None
+Checkpoint version 2 is up-to-date.
+Model: "functional_5"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input_data (InputLayer)         [(None, None, 48, 1) 0                                            
+__________________________________________________________________________________________________
+conv2d_0 (Conv2D)               (None, None, 48, 40) 400         input_data[0][0]                 
+__________________________________________________________________________________________________
+pool2d_1 (MaxPooling2D)         (None, None, 24, 40) 0           conv2d_0[0][0]                   
+__________________________________________________________________________________________________
+conv2d_1 (Conv2D)               (None, None, 24, 60) 21660       pool2d_1[0][0]                   
+__________________________________________________________________________________________________
+pool2d_3 (MaxPooling2D)         (None, None, 12, 60) 0           conv2d_1[0][0]                   
+__________________________________________________________________________________________________
+reshape_2 (Reshape)             (None, None, 720)    0           pool2d_3[0][0]                   
+__________________________________________________________________________________________________
+bidirectional_2 (Bidirectional) (None, None, 400)    1473600     reshape_2[0][0]                  
+__________________________________________________________________________________________________
+dropout_2 (Dropout)             (None, None, 400)    0           bidirectional_2[0][0]            
+__________________________________________________________________________________________________
+input_sequence_length (InputLay [(None, 1)]          0                                            
+__________________________________________________________________________________________________
+logits (Dense)                  (None, None, 255)    102255      dropout_2[0][0]                  
+__________________________________________________________________________________________________
+tf_op_layer_FloorDiv_4 (TensorF [(None, 1)]          0           input_sequence_length[0][0]      
+__________________________________________________________________________________________________
+softmax (Softmax)               (None, None, 255)    0           logits[0][0]                     
+__________________________________________________________________________________________________
+input_data_params (InputLayer)  [(None, 1)]          0                                            
+__________________________________________________________________________________________________
+tf_op_layer_FloorDiv_5 (TensorF [(None, 1)]          0           tf_op_layer_FloorDiv_4[0][0]     
+==================================================================================================
+Total params: 1,597,915
+Trainable params: 1,597,915
+Non-trainable params: 0
+__________________________________________________________________________________________________
+None
+Checkpoint version 2 is up-to-date.
+Model: "functional_7"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input_data (InputLayer)         [(None, None, 48, 1) 0                                            
+__________________________________________________________________________________________________
+conv2d_0 (Conv2D)               (None, None, 48, 40) 400         input_data[0][0]                 
+__________________________________________________________________________________________________
+pool2d_1 (MaxPooling2D)         (None, None, 24, 40) 0           conv2d_0[0][0]                   
+__________________________________________________________________________________________________
+conv2d_1 (Conv2D)               (None, None, 24, 60) 21660       pool2d_1[0][0]                   
+__________________________________________________________________________________________________
+pool2d_3 (MaxPooling2D)         (None, None, 12, 60) 0           conv2d_1[0][0]                   
+__________________________________________________________________________________________________
+reshape_3 (Reshape)             (None, None, 720)    0           pool2d_3[0][0]                   
+__________________________________________________________________________________________________
+bidirectional_3 (Bidirectional) (None, None, 400)    1473600     reshape_3[0][0]                  
+__________________________________________________________________________________________________
+dropout_3 (Dropout)             (None, None, 400)    0           bidirectional_3[0][0]            
+__________________________________________________________________________________________________
+input_sequence_length (InputLay [(None, 1)]          0                                            
+__________________________________________________________________________________________________
+logits (Dense)                  (None, None, 255)    102255      dropout_3[0][0]                  
+__________________________________________________________________________________________________
+tf_op_layer_FloorDiv_6 (TensorF [(None, 1)]          0           input_sequence_length[0][0]      
+__________________________________________________________________________________________________
+softmax (Softmax)               (None, None, 255)    0           logits[0][0]                     
+__________________________________________________________________________________________________
+input_data_params (InputLayer)  [(None, 1)]          0                                            
+__________________________________________________________________________________________________
+tf_op_layer_FloorDiv_7 (TensorF [(None, 1)]          0           tf_op_layer_FloorDiv_6[0][0]     
+==================================================================================================
+Total params: 1,597,915
+Trainable params: 1,597,915
+Non-trainable params: 0
+__________________________________________________________________________________________________
+None
+Checkpoint version 2 is up-to-date.
+Model: "functional_9"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input_data (InputLayer)         [(None, None, 48, 1) 0                                            
+__________________________________________________________________________________________________
+conv2d_0 (Conv2D)               (None, None, 48, 40) 400         input_data[0][0]                 
+__________________________________________________________________________________________________
+pool2d_1 (MaxPooling2D)         (None, None, 24, 40) 0           conv2d_0[0][0]                   
+__________________________________________________________________________________________________
+conv2d_1 (Conv2D)               (None, None, 24, 60) 21660       pool2d_1[0][0]                   
+__________________________________________________________________________________________________
+pool2d_3 (MaxPooling2D)         (None, None, 12, 60) 0           conv2d_1[0][0]                   
+__________________________________________________________________________________________________
+reshape_4 (Reshape)             (None, None, 720)    0           pool2d_3[0][0]                   
+__________________________________________________________________________________________________
+bidirectional_4 (Bidirectional) (None, None, 400)    1473600     reshape_4[0][0]                  
+__________________________________________________________________________________________________
+dropout_4 (Dropout)             (None, None, 400)    0           bidirectional_4[0][0]            
+__________________________________________________________________________________________________
+input_sequence_length (InputLay [(None, 1)]          0                                            
+__________________________________________________________________________________________________
+logits (Dense)                  (None, None, 255)    102255      dropout_4[0][0]                  
+__________________________________________________________________________________________________
+tf_op_layer_FloorDiv_8 (TensorF [(None, 1)]          0           input_sequence_length[0][0]      
+__________________________________________________________________________________________________
+softmax (Softmax)               (None, None, 255)    0           logits[0][0]                     
+__________________________________________________________________________________________________
+input_data_params (InputLayer)  [(None, 1)]          0                                            
+__________________________________________________________________________________________________
+tf_op_layer_FloorDiv_9 (TensorF [(None, 1)]          0           tf_op_layer_FloorDiv_8[0][0]     
+==================================================================================================
+Total params: 1,597,915
+Trainable params: 1,597,915
+Non-trainable params: 0
+__________________________________________________________________________________________________
+None
+Prediction:   0%|                                                                                                                   | 0/5103 [00:00<?, ?it/s]WARNING:tensorflow:5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x7f01282cf510> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+Prediction:   0%|                                                                                                         | 1/5103 [00:02<3:46:25,  2.66s/it]WARNING:tensorflow:6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x7f014049e378> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:7 out of the last 7 calls to <function Model.make_predict_function.<locals>.predict_function at 0x7f01403c01e0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:8 out of the last 8 calls to <function Model.make_predict_function.<locals>.predict_function at 0x7f01403271e0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:9 out of the last 9 calls to <function Model.make_predict_function.<locals>.predict_function at 0x7f0128476b70> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:10 out of the last 10 calls to <function Model.make_predict_function.<locals>.predict_function at 0x7f01282cf510> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+Prediction:   0%|                                                                                                         | 2/5103 [00:04<3:31:22,  2.49s/it]WARNING:tensorflow:11 out of the last 11 calls to <function Model.make_predict_function.<locals>.predict_function at 0x7f014049e378> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:11 out of the last 11 calls to <function Model.make_predict_function.<locals>.predict_function at 0x7f01403c01e0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:11 out of the last 11 calls to <function Model.make_predict_function.<locals>.predict_function at 0x7f01403271e0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:11 out of the last 11 calls to <function Model.make_predict_function.<locals>.predict_function at 0x7f0128476b70> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+WARNING:tensorflow:11 out of the last 11 calls to <function Model.make_predict_function.<locals>.predict_function at 0x7f01282cf510> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has experimental_relax_shapes=True option that relaxes argument shapes that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/tutorials/customization/performance#python_or_tensor_args and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+Prediction: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████| 5103/5103 [12:36<00:00,  6.75it/s]
+Prediction of 5 models took 756.7047371864319s
+Average sentence confidence: 99.59%
+All files written
+
