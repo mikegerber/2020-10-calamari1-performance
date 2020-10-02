@@ -66,4 +66,6 @@ test_calamari_1() {
 prepare_test_data
 download_models
 test_calamari_0
+test_calamari_0
+test_calamari_1
 test_calamari_1
